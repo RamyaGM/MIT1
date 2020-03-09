@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setAlarm"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:layout_marginBottom="20dp"/>
+
+
+            <DatePicker
+                android:id="@+id/dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></DatePicker>
+            <TimePicker
+                android:id="@+id/tp"
+                android:layout_width="match_parent"
+                android:layout_height="340dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cancel" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="set"
+                    />
+
+                <!--- <com.hitomi.cmlibrary.CircleMenu
+                     android:id="@+id/cm"
+                     android:layout_width="wrap_content"
+                     android:layout_height="103dp"
+                     android:layout_centerInParent="true" />
+         -->
+                <Button
+                    android:text="Text"
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:text="QRcode"
+                    android:id="@+id/qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
